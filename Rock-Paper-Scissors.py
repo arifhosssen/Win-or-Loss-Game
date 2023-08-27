@@ -38,7 +38,7 @@ import random
 # print("hello world")
 #
 def play():
-    user = input("'r' for Rock, 'p' Paper, 's' for Scissors :  ")
+    user = input("'r' for Rock, 'p' Paper, 's' for Scissors:  ")
     com = random.choice(['r', 'p', 's'])
 
     if user == com:
@@ -46,20 +46,8 @@ def play():
     # r<s, s<p, p<r can deaf
     elif (user == 'r' and com == 's') or (user == 's' and com == 'p') or (user == 'p' and com == 'r'):
         return "You Won!"
-    return "you Lost!"
+    return "You lost!"
 
 print(play())
-# print(details())
-# 
-#
-# name = "Arif"
-# print("my name is {}.".format(name))
-# print(f"my name is {name}")
-# print("my name is " + name)
 
-# a = int(input("Enter the number that be multiple: "))
-# print(f"Multiplication of {a} is: ")
-#
-# for i in range(1,11):
-#     print(f"{a}*{i}= {a*i}")
 
